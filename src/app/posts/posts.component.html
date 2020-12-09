@@ -1,0 +1,63 @@
+<br>
+<div class="container">
+    <p>Material Added</p>
+    <hr />
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Company (disabled)</mat-label>
+            <input matInput disabled value="Google">
+        </mat-form-field>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>First name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Long Last Name That Will Be Truncated</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <mat-form-field class="example-full-width">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Ex. Sanjay Apartment">SN 12 Apart Sanjay RN 21</textarea>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Address 2</mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+        </p>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>City</mat-label>
+                        <input matInput placeholder="Ex. Mumbai">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>State</mat-label>
+                        <input matInput placeholder="Ex. Maharashtra">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Postal Code</mat-label>
+                        <input matInput #postalCode maxlength="5" placeholder="Ex. 411033" value="415523">
+                        <mat-hint align="end">{{postalCode.value.length}} / 6</mat-hint>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

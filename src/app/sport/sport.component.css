@@ -1,0 +1,5 @@
+ul li:hover{
+    background: blue;
+    color: white;
+    opacity: 0.6;
+}

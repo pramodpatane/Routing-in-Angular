@@ -1,0 +1,17 @@
+*{
+    padding: 10px;
+}
+h1{
+    padding: 50px;
+    float: left;
+}
+
+img{
+    width: 500px;
+    height: auto;
+    float: left;
+}
+p{
+    float: left;
+    width: 300px;
+}
